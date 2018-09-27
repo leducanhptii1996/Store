@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepView" customModule="Store" customModuleProvider="target">
+            <connections>
+                <outlet property="mContentView" destination="iN0-l3-epB" id="bUB-Ue-FDi"/>
+                <outlet property="mNumLabel" destination="365-Ul-UET" id="hou-51-dRK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StepView" customModule="Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WW-bm-SMY" userLabel="+">
+                    <rect key="frame" x="68" y="0.0" width="30" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                            <color key="value" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onTangToched:" destination="-1" eventType="touchUpInside" id="WS9-sj-ckL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlf-AU-U3J" userLabel="-">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                            <color key="value" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onGiamToched:" destination="-1" eventType="touchUpInside" id="1gh-LG-pYw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="365-Ul-UET">
+                    <rect key="frame" x="45" y="13" width="8" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                            <color key="value" red="1" green="0.31764705879999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6WW-bm-SMY" firstAttribute="leading" secondItem="365-Ul-UET" secondAttribute="trailing" constant="15" id="0OR-Gk-KfW"/>
+                <constraint firstItem="Dlf-AU-U3J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="G6F-bs-gki"/>
+                <constraint firstItem="6WW-bm-SMY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="O80-Ju-OWU"/>
+                <constraint firstItem="6WW-bm-SMY" firstAttribute="leading" secondItem="365-Ul-UET" secondAttribute="trailing" constant="15" id="ShH-cT-D6K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dlf-AU-U3J" secondAttribute="bottom" constant="5" id="WMS-OU-o5X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="365-Ul-UET" secondAttribute="bottom" constant="16" id="ZIO-v8-FAw"/>
+                <constraint firstItem="Dlf-AU-U3J" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bml-YG-brs"/>
+                <constraint firstItem="365-Ul-UET" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="dkM-j8-cUW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6WW-bm-SMY" secondAttribute="bottom" constant="5" id="hxb-JZ-zrG"/>
+                <constraint firstItem="365-Ul-UET" firstAttribute="leading" secondItem="Dlf-AU-U3J" secondAttribute="trailing" constant="15" id="kay-QP-Etq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6WW-bm-SMY" secondAttribute="trailing" constant="12" id="ofE-3p-gH8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="144" y="344"/>
+        </view>
+    </objects>
+</document>
